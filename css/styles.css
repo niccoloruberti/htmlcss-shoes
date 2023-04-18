@@ -3,3 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* utilities */
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.box {
+    height: 100vh;
+}
+
+/* header */
+
+header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.container-header {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
