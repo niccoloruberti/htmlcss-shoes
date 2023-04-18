@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Rubik Mono One", sans-serif;
+    scroll-behavior: smooth;
+}
+
 /* utilities */
 
 .red {
@@ -18,8 +23,21 @@
     background-color: yellow;
 }
 
+.font-yellow {
+    color: yellow;
+}
+
+.font-green {
+    color: green;
+}
+
 .box {
     height: 100vh;
+    position: relative;
+}
+
+img {
+    width: 100%;
 }
 
 /* header */
@@ -28,6 +46,7 @@ header {
     height: 50px;
     width: 100%;
     position: fixed;
+    z-index: 100;
 }
 
 header a {
@@ -45,4 +64,18 @@ header a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+/* main */
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.content p {
+    text-align: center;
+    font-size: 40px;
 }
